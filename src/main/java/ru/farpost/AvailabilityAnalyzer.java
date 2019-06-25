@@ -37,7 +37,8 @@ public class AvailabilityAnalyzer {
         System.out.print('\t');
         System.out.print(percentsFmt.format(
                 criticalPercents.stream().mapToDouble(Double::doubleValue).average().getAsDouble()));
-
+        System.out.println();
+        
         criticalPercentsFinish = null;
         criticalPercentsStart = null;
         criticalPercents.clear();
